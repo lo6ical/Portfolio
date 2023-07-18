@@ -1,17 +1,23 @@
 import Card from '@mui/material/Card';
-import Grid from '@mui/material/Unstable_Grid2';
-import Avatar from '@mui/material/Avatar';
+import image from '../assets/img/goatifi.png';
+import { CardContent, CardMedia, Typography } from '@mui/material';
 
 function About() {
-    return(
-        <Grid container spacing={2}>
-            <Grid sx={12}>
-                <Avatar alt="Joonas Saarela" src="../assets/img/goatifi.png"></Avatar>
-            </Grid>
-            <Grid sx={12}>
-                <Card>About me!</Card>    
-            </Grid>
-        </Grid>
+    return (
+        <Card sx={{boxShadow: 5}}>
+            <CardMedia
+                component="img"
+                height="300"
+                image={image}
+                alt="Joonas Saarela"
+            />
+            <CardContent>
+                <Typography variant="body2" color="text.secondary">
+                    About me <br /> About me <br /> About me <br /> About me <br /> About me <br />
+                </Typography>
+            </CardContent>
+        </Card>
+
     )
 }
 export default About;
