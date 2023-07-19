@@ -1,5 +1,4 @@
-import Grid from '@mui/material/Unstable_Grid2';
-import Card from '@mui/material/Card';
+import Grid from '@mui/material/Grid';
 import Header from './Header';
 import About from './About';
 import ResumeContent from './ResumeContent';

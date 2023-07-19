@@ -1,4 +1,3 @@
-import './App.css'
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import Resume from './components/Resume';
 import Projects from './components/Projects';
