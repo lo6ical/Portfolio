@@ -2,3 +2,17 @@
     -webkit-clip-path: polygon(0 9%, 100% 0, 100% 94%, 0 100%);
     clip-path: polygon(0 9%, 100% 0, 100% 94%, 0 100%);
 }
+.timeline .MuiTimelineItem-root {
+    min-height: 50px;
+}
+.timeline .MuiTimelineContent-root {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.timeline .MuiTimelineDot-root {
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+.timeline {
+    padding: 0;
+}

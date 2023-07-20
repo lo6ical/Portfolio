@@ -22,49 +22,48 @@ function About() {
                 alt='Joonas Saarela'
             />
             {/* Timeline */}
-            <Timeline className='timeline' position='right' sx={{[`& .${timelineItemClasses.root}:before`]: { flex: 0, padding: 0,},}}>
+            <Timeline className='timeline' position='right' sx={{ [`& .${timelineItemClasses.root}:before`]: { flex: 0, padding: 0, }, }}>
                 {/* Name */}
                 <TimelineItem>
-                    <TimelineSeparator className='separator_padding'>
-                        <TimelineDot className='timeline_dot_header' />
+                    <TimelineSeparator>
+                        <TimelineDot variant='outlined' className='timeline_first_dot' />
                         <TimelineConnector />
                     </TimelineSeparator>
                     <TimelineContent className='timeline_header'><Box component='span' sx={{ fontWeight: 'bold' }}>Name</Box>: Joonas Saarela</TimelineContent>
                 </TimelineItem>
                 {/* Age */}
                 <TimelineItem>
-                    <TimelineSeparator className='separator_padding'>
-                        <TimelineDot className='timeline_dot_header' />
+                    <TimelineSeparator>
+                        <TimelineDot variant='outlined' className='timeline_dot_header' />
                         <TimelineConnector />
                     </TimelineSeparator>
                     <TimelineContent className='timeline_header'><Box component='span' sx={{ fontWeight: 'bold' }}>Age</Box>: 24</TimelineContent>
                 </TimelineItem>
                 {/* Job */}
                 <TimelineItem>
-                    <TimelineSeparator className='separator_padding'>
-                        <TimelineDot className='timeline_dot_header' />
+                    <TimelineSeparator>
+                        <TimelineDot variant='outlined' className='timeline_dot_header' />
                         <TimelineConnector />
                     </TimelineSeparator>
                     <TimelineContent className='timeline_header'><Box component='span' sx={{ fontWeight: 'bold' }}>Job</Box>: Installation Specialist</TimelineContent>
                 </TimelineItem>
                 {/* Email */}
                 <TimelineItem>
-                    <TimelineSeparator className='separator_padding'>
-                        <TimelineDot className='timeline_dot_header'/>
+                    <TimelineSeparator>
+                        <TimelineDot variant='outlined' className='timeline_dot_header' />
                         <TimelineConnector />
                     </TimelineSeparator>
-                    <TimelineContent className='timeline_header'><Box component='span' sx={{fontWeight: 'bold'}}>Email</Box>: jsaarela98@gmail.com</TimelineContent>
+                    <TimelineContent className='timeline_header'><Box component='span' sx={{ fontWeight: 'bold' }}>Email</Box>: jsaarela98@gmail.com</TimelineContent>
                 </TimelineItem>
                 {/* GitHub */}
                 <TimelineItem>
-                    <TimelineSeparator className='separator_padding'>
-                        <TimelineDot className='timeline_dot_header' />
+                    <TimelineSeparator>
+                        <TimelineDot variant='outlined' className='timeline_dot_header' />
                     </TimelineSeparator>
-                    <TimelineContent className='timeline_header'><Box component='span' sx={{fontWeight: 'bold'}}>GitHub</Box>: <Link href='https://github.com/lo6ical'>/lo6ical</Link></TimelineContent>
+                    <TimelineContent className='timeline_header'><Box component='span' sx={{ fontWeight: 'bold' }}>GitHub</Box>: <Link href='https://github.com/lo6ical'>/lo6ical</Link></TimelineContent>
                 </TimelineItem>
             </Timeline>
         </Card>
-
     )
 }
 export default About;
